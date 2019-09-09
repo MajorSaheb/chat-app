@@ -1,5 +1,5 @@
-chat-app
-Infeedo
+## chat-app
+`Infeedo`
 
 Author : Aashutosh Prakash
 
