@@ -1,0 +1,58 @@
+.homePage{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    background-color: #f5f3f3;
+    margin-top: 13px;
+}
+.homePage .inputWindow{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+.homePage .inputWindow input{
+    flex-grow: 8;
+    border: 1px solid #bbbaba;
+    border-radius: 22px;
+    padding: 14px;
+    padding-left: 44px;
+}
+.homePage .inputWindow input:focus {outline:0;}
+.homePage .inputWindow button{
+    flex-grow: 2;
+    background: #fd2222;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+.homePage .inputWindow button:focus {outline:0;}
+.homePage .messageWindow{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-flow: column wrap;
+}
+li{
+    height: 40px;
+    padding-top: 12px;
+    padding: 0px 13px;
+    border-radius: 18px;
+    color: white;
+}
+.homePage .messageWindow .liClient{
+    background-color: blueviolet;
+    align-self: flex-end;
+    margin-right: 2%;
+}
+.homePage .messageWindow .liBot{
+    background-color: rgb(24, 201, 24);
+    align-self: flex-start;
+    margin-left: 2%;
+}

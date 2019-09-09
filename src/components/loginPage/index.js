@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './loginPage.css';
+import { Link } from "react-router-dom";
 
 
 function LoginPage(props) {
@@ -12,11 +13,13 @@ function LoginPage(props) {
       <div className="loginPage">
         <div className="content">
           <h3>Login</h3>
-          <label>Email: </label>
-          <input type='text' placeholder='Email' onChange={handleNameInput} value={name} required/>
+          <label>Name: </label>
+          <input type='text' placeholder='Name' onChange={handleNameInput} value={name} required/>
           <label>Password: </label>
           <input type='password' placeholder='Password' onChange={handleNameInput} value={password} required/>
-          <button onClick={()=>props.post(name,password)}>Login</button>
+          <Link to="/home">
+            <button onClick={()=>props.post(name,password)}>Login</button>
+          </Link>
         </div>
       </div>
     );
